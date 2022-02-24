@@ -1,7 +1,9 @@
 #! /usr/bin/env bash
 
 git init
-git add *
+git config user.email "{{cookiecutter.email}}"
+git config user.name "{{cookiecutter.full_name}}"
+git add -A
 git commit -m "Initial commit"
-git tag v0.1.0
+git tag {{cookiecutter.version}}
 git remote add origin https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}
