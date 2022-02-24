@@ -6,10 +6,10 @@ A cookiecutter template for python applications
 
 Key features:
 - Uses [Python Build Reasonableness (pbr)](https://docs.openstack.org/pbr/latest/)
-- Testing using [pystest](https://docs.pytest.org/en/7.0.x/)
-- [tox](https://tox.wiki/en/latest/) to run everything
-	- Github action for the tox run
-- Sphinx documentation for read the docs
+- Testing with [pytest](https://docs.pytest.org/en/7.0.x/)
+- [tox](https://tox.wiki/en/latest/) to run everything from linting and docs to tests
+	- Includes a Github action to run tox on new pushes
+- Sphinx Documentation for [Read the Docs](https://readthedocs.org/)
 
 ## Usage
 Install cookiecutter:
