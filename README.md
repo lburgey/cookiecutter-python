@@ -1,11 +1,11 @@
-# Python cookiecutter
+# Python Cookiecutter
 
 [![build](https://github.com/lburgey/cookiecutter-python/actions/workflows/ci.yml/badge.svg)](https://github.com/lburgey/cookiecutter-python/actions/workflows/ci.yml)
 
 A cookiecutter template for python applications
 
 Key features:
-- Uses [Python Build Reasonableness (pbr)](https://docs.openstack.org/pbr/latest/)
+- Uses Python Build Reasonableness ([pbr](https://docs.openstack.org/pbr/latest/))
 - Testing with [pytest](https://docs.pytest.org/en/7.0.x/)
 - [tox](https://tox.wiki/en/latest/) to run everything from linting and docs to tests
 	- Includes a Github action to run tox on new pushes
@@ -17,18 +17,21 @@ Install cookiecutter:
 pip install -U cookiecutter
 ```
 
-Generate a new python project using this template.
+Generate a new python project using this template:
 ```bash
 cookiecutter https://github.com/lburgey/cookiecutter-python.git
 ```
 
-Cookiecutter will also initialize a git repository for the template. You only need to push the code afterwards:
+Use the created project:
 ```bash
-# test the generated template
+# test the generated project
 tox
 
+# tox will also build the documentation. You will find further instructions for the project in the development section of the documentation.
+# Access it using:
+<your browser> ./doc/build/index.html
 
-# push your the initial commit
+# Cookiecutter will also initialize a git repository for the project. You only need to push the code afterwards:
 git push origin
 ```
 
